@@ -3,15 +3,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(252, 229, 229);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 724px) {
   .listCharacters {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(226, 151, 226);
   }
 }

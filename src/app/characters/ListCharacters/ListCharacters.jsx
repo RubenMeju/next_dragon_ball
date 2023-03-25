@@ -9,7 +9,7 @@ export default async function ListCharacters() {
   console.log('characters', characters)
   return (
     <div className={StylesListCharacters.listCharacters}>
-      {characters.results.slice(0, 5).map((character) => (
+      {characters.results.slice(0, 15).map((character) => (
         <Card key={character.id} character={character} />
       ))}
     </div>
