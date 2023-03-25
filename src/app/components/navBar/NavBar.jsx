@@ -20,7 +20,8 @@ export default function NavBar() {
           fill={true}
           src={Logo}
           className={StylesNavBar.image}
-          // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+          priority={true}
           alt="Logo Dragon Ball"
         />
       </div>
