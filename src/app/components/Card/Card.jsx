@@ -6,7 +6,7 @@ export default function Card({ character }) {
     <div className={StylesCard.card}>
       <Image
         src={character.image}
-        width={300}
+        width={360}
         height={300}
         className={StylesCard.image}
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
@@ -15,8 +15,9 @@ export default function Card({ character }) {
       />
 
       <div className={StylesCard.cardBody}>
-        <p>{character.name}</p>
-        <p>{character.species}</p>
+        <p className={StylesCard.name}>{character.name}</p>
+        <p className={StylesCard.info}>{character.species}</p>
+        <p className={StylesCard.info}>{character.planet.name}</p>
       </div>
     </div>
   )

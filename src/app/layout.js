@@ -1,5 +1,5 @@
 import NavBar from './components/navBar/NavBar.jsx'
-import './globals.css'
+import './layout.css'
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
       <body>
         <NavBar />
 
-        <div>{children}</div>
+        <div className="container">{children}</div>
       </body>
     </html>
   )
