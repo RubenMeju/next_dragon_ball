@@ -17,9 +17,10 @@ export default function NavBar() {
     <nav className={StylesNavBar.navBar}>
       <div className={StylesNavBar.cont_image}>
         <Image
-          src={Logo}
           fill={true}
+          src={Logo}
           className={StylesNavBar.image}
+          // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
           alt="Logo Dragon Ball"
         />
       </div>

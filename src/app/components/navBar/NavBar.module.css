@@ -2,14 +2,14 @@
   width: 100%;
   height: 4rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: rgb(9, 129, 241);
 }
 
 .cont_image {
   position: relative;
-  width: 30%;
+  width: 200px;
   height: 100%;
 }
 
