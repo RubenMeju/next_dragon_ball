@@ -1,6 +1,7 @@
 .motionButton {
   width: 48px;
   height: 48px;
+  margin-top: 10px;
   background-color: transparent;
   border: none;
   display: flex;
