@@ -24,9 +24,11 @@ export default function NavBar() {
         />
       </div>
 
-      <NavItems />
-
       <NavBarContext.Provider value={{ isOpen, setIsOpen }}>
+        <div className={StylesNavBar.navItems}>
+          <NavItems />
+        </div>
+
         <ButtonBars />
         <MenuBars />
       </NavBarContext.Provider>

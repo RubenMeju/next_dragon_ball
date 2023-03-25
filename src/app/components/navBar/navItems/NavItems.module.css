@@ -5,9 +5,6 @@
 .li {
   list-style: none;
   margin: 1rem;
-}
-
-.link {
   font-size: 1.5rem;
 }
 
@@ -16,11 +13,11 @@
 }
 
 .selected {
-  border-bottom: 2px solid orange;
+  border-bottom: 4px solid rgb(255, 0, 221);
 }
 
 @media screen and (max-width: 600px) {
   .ul {
-    display: none;
+    flex-direction: column;
   }
 }

@@ -18,3 +18,9 @@
   height: 100%;
   object-fit: contain;
 }
+
+@media screen and (max-width: 600px) {
+  .navItems {
+    display: none;
+  }
+}
