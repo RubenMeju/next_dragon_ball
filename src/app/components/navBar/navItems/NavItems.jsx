@@ -2,8 +2,8 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useContext } from 'react'
 import { pages } from '../const_nav'
+import { NavBarContext } from '../menuItems/MenuItems'
 import stylesNavItems from './NavItems.module.css'
-import { NavBarContext } from '../NavBar'
 
 export const NavItems = () => {
   const pathname = usePathname()

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import StylesButtonBars from './ButtonBars.module.css'
 import { useContext } from 'react'
-import { NavBarContext } from '../NavBar'
+import { NavBarContext } from '../menuItems/MenuItems'
 
 const Path = (props) => (
   <motion.path

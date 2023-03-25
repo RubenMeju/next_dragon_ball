@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion'
 import { useContext } from 'react'
 import { variants } from '../const_nav'
-import { NavBarContext } from '../NavBar'
 import { NavItemsAnimated } from './NavItemsAnimated'
 import StylesMenuBars from './MenuBars.module.css'
+import { NavBarContext } from '../menuItems/MenuItems'
 
 export const MenuBars = () => {
   const { isOpen } = useContext(NavBarContext)
