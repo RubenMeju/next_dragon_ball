@@ -7,14 +7,14 @@ import { NavBarContext } from '../NavBar'
 
 export const NavItems = () => {
   const pathname = usePathname()
-  const { isOpen, setIsOpen } = useContext(NavBarContext)
+  const { setIsOpen } = useContext(NavBarContext)
   return (
     <ul className={stylesNavItems.ul}>
       {pages.map(({ name, href }) => (
         <li
           key={name}
           className={stylesNavItems.li}
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => setIsOpen(false)}
         >
           <Link
             href={href}
