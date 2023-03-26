@@ -7,7 +7,7 @@ export default async function ListCharacters() {
   return (
     <div className={StylesListCharacters.listCharacters}>
       {characters.results.slice(0, 15).map((character) => (
-        <Card key={character.id} character={character} />
+        <Card key={character.id} data={character} />
       ))}
     </div>
   )
