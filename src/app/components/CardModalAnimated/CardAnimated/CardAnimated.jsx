@@ -1,15 +1,15 @@
 'use client'
 import { motion } from 'framer-motion'
 import { useContext } from 'react'
-import Card from '../Card/Card'
-import { ModalContext } from './CardModalAnimated'
-import StylesPrueba from './Prueba.module.css'
+import Card from '../../Card/Card'
+import { ModalContext } from '../CardModalAnimated'
+import StylesCardAnimated from './CardAnimated.module.css'
 
 export default function CardAnimated({ data }) {
   const { setSelectedId, setDatos } = useContext(ModalContext)
   return (
     <>
-      <div className={StylesPrueba.containerCards}>
+      <div className={StylesCardAnimated.containerCards}>
         {data.results.map((item) => (
           <motion.div
             key={item.id}

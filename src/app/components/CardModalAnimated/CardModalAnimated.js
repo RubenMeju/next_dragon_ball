@@ -1,7 +1,7 @@
 'use client'
 import { createContext, useState } from 'react'
-import CardAnimated from './CardAnimated'
-import { CardModal } from './CardModal'
+import CardAnimated from './CardAnimated/CardAnimated'
+import { CardModal } from './CardModal/CardModal'
 
 export const ModalContext = createContext()
 

@@ -1,0 +1,17 @@
+.containerCards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(212, 0, 255);
+}
+
+@media screen and (min-width: 724px) {
+  .containerCards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(40, 146, 26);
+  }
+}
