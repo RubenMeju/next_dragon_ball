@@ -1,5 +1,4 @@
-import React from 'react'
-import PruebaAnimated from '../components/Prueba/PruebaAnimated'
+import CardModalAnimated from '../components/Prueba/CardModalAnimated'
 import { getMovies } from '../services/getMovies'
 
 export default async function page() {
@@ -8,7 +7,7 @@ export default async function page() {
     <div>
       <h1>Películas Dragon Ball</h1>
 
-      <PruebaAnimated data={movies} />
+      <CardModalAnimated data={movies} />
     </div>
   )
 }

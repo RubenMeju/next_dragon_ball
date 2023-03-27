@@ -1,5 +1,5 @@
 import { Suspense } from 'react'
-import PruebaAnimated from '../components/Prueba/PruebaAnimated'
+import CardModalAnimated from '../components/Prueba/CardModalAnimated'
 import { getCharacters } from '../services/getCharacters'
 import Loading from './loading'
 import Styles from './styles.module.css'
@@ -10,7 +10,7 @@ export default async function page() {
     <>
       <h1 className={Styles.title}>Personajes</h1>
       <Suspense fallback={<Loading />}>
-        <PruebaAnimated data={characters} />
+        <CardModalAnimated data={characters} />
       </Suspense>
     </>
   )
