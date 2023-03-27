@@ -24,6 +24,9 @@
   border: 1px solid aliceblue;
   border-radius: 0.5rem;
   background-color: green;
+  font-size: 1.2rem;
+  color: aliceblue;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 724px) {
