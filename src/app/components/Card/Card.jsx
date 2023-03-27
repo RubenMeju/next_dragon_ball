@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import StylesCard from './Card.module.css'
 
-export default function Card({ data }) {
+export default function Card({ id, name, image, description }) {
   return (
     <div className={StylesCard.card}>
       <div className={StylesCard.contImage}>
         <Image
           fill={true}
-          src={data.image}
+          src={image}
           className={StylesCard.image}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
           // priority={true}
@@ -19,11 +19,8 @@ export default function Card({ data }) {
       </div>
 
       <div className={StylesCard.cardBody}>
-        <p className={StylesCard.name}>{data.name ? data.name : data.title}</p>
-        <p className={StylesCard.info}>{data.species ? data.species : null}</p>
-        <p className={StylesCard.info}>
-          {data.planet ? data.planet.name : null}
-        </p>
+        <p className={StylesCard.name}>{name}</p>
+        <p className={StylesCard.info}>{description}</p>
       </div>
     </div>
   )

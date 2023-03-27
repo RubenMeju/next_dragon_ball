@@ -1,0 +1,50 @@
+.containerCards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(212, 0, 255);
+}
+
+/*componente AnimatedPresence*/
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+}
+
+.contCard {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  width: 30%;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid aliceblue;
+  border-radius: 0.5rem;
+  background-color: green;
+}
+
+@media screen and (min-width: 724px) {
+  .containerCards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(40, 146, 26);
+  }
+
+  .contCard {
+    width: 500px;
+  }
+}
