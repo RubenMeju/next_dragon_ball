@@ -1,12 +1,14 @@
 import React from 'react'
-import ListMovies from './ListMovies/ListMovies'
+import PruebaAnimated from '../components/Prueba/PruebaAnimated'
+import { getMovies } from '../services/getMovies'
 
-export default function page() {
+export default async function page() {
+  const movies = await getMovies()
   return (
     <div>
       <h1>Películas Dragon Ball</h1>
 
-      <ListMovies />
+      <PruebaAnimated data={movies} />
     </div>
   )
 }
