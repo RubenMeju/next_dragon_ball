@@ -1,5 +1,5 @@
 import { Suspense } from 'react'
-import CardModalAnimated from '../components/Prueba/CardModalAnimated'
+import CardModalAnimated from '../components/CardModalAnimated/CardModalAnimated'
 import { getCharacters } from '../services/getCharacters'
 import Loading from './loading'
 import Styles from './styles.module.css'

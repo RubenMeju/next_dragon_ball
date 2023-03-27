@@ -1,4 +1,4 @@
-import CardModalAnimated from '../components/Prueba/CardModalAnimated'
+import CardModalAnimated from '../components/CardModalAnimated/CardModalAnimated'
 import { getMovies } from '../services/getMovies'
 
 export default async function page() {
