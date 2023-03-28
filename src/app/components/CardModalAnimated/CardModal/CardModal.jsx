@@ -3,6 +3,8 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useContext } from 'react'
 import { ModalContext } from '../CardModalAnimated'
 import StylesCardModal from './CardModal.module.css'
+import svgPlanet from '../../../../../public/planet.svg'
+import svgSkeleton from '../../../../../public/skeleton.svg'
 
 export function CardModal() {
   const { selectedId, setSelectedId, datos } = useContext(ModalContext)
@@ -35,15 +37,31 @@ export function CardModal() {
                 />
               </div>
               <div className={StylesCardModal.cardInfo}>
-                <div className={StylesCardModal.cardHeader}>
-                  <p className={StylesCardModal.cardName}>{datos.name}</p>
-                </div>
+                <p className={StylesCardModal.cardName}>{datos.name}</p>
 
-                <div className={StylesCardModal.cardBody}>
+                <div>
                   <p className={StylesCardModal.info}>{datos.description}</p>
                   <div className={StylesCardModal.cardDetails}>
-                    <p className={StylesCardModal.info}>{datos.planet.name}</p>
-                    <p className={StylesCardModal.info}>{datos.species}</p>
+                    <div className={StylesCardModal.groupDetails}>
+                      <Image
+                        src={svgPlanet}
+                        alt="planet"
+                        width={48}
+                        height={48}
+                      />
+                      <p className={StylesCardModal.info}>
+                        {datos.planet.name}
+                      </p>
+                    </div>
+                    <div className={StylesCardModal.groupDetails}>
+                      <Image
+                        src={svgSkeleton}
+                        alt="skeleton"
+                        width={48}
+                        height={48}
+                      />
+                      <p className={StylesCardModal.info}>{datos.species}</p>
+                    </div>
                   </div>
                 </div>
               </div>

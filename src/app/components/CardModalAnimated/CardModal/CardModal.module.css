@@ -37,7 +37,7 @@
 
 .cardName {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   color: white;
 }
@@ -51,6 +51,11 @@
 .cardDetails {
   display: flex;
   justify-content: space-between;
+}
+.groupDetails {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .button {
@@ -95,5 +100,8 @@
   .cardInfo {
     width: 50%;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }

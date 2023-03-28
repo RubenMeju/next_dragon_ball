@@ -7,7 +7,6 @@
 .cursorPointer {
   margin-bottom: 2rem;
   cursor: pointer;
-  background-color: red;
 }
 
 @media screen and (min-width: 724px) {
