@@ -6,7 +6,9 @@
   background-color: rgb(212, 0, 255);
 }
 .cursorPointer {
+  margin-bottom: 2rem;
   cursor: pointer;
+  background-color: red;
 }
 
 @media screen and (min-width: 724px) {
