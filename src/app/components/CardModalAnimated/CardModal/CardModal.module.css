@@ -7,14 +7,50 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.75);
   z-index: 9999;
 }
 
-.contCard {
-  width: 90%;
+.contModal {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: rgb(10, 95, 223);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+.contCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cardImage {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+.image {
+  object-fit: cover;
+}
+
+.cardName {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+.cardInfo {
+  font-size: 1.2rem;
+  color: rgb(218, 218, 218);
+}
+.info {
+  color: rgb(218, 218, 218);
+}
+.cardDetails {
+  display: flex;
+  justify-content: space-between;
 }
 
 .button {
@@ -34,8 +70,30 @@
   color: white;
 }
 
+@media screen and (min-width: 500px) {
+  .contModal {
+    width: 80%;
+    max-width: 800px;
+  }
+}
+
 @media screen and (min-width: 724px) {
+  .contModal {
+    width: 80%;
+    max-width: 1000px;
+    align-items: center;
+  }
   .contCard {
-    width: 500px;
+    max-width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .cardImage {
+    width: 50%;
+    height: 500px;
+  }
+  .cardInfo {
+    width: 50%;
+    padding: 2rem;
   }
 }

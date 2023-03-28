@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(212, 0, 255);
 }
 .cursorPointer {
   margin-bottom: 2rem;
@@ -17,6 +16,5 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(40, 146, 26);
   }
 }
