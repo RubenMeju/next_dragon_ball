@@ -20,12 +20,13 @@
 .button {
   width: 30%;
   margin: auto;
+  margin-top: 2rem;
   padding: 10px;
-  border: 1px solid aliceblue;
+  border: 1px solid rgb(58, 163, 255);
   border-radius: 0.5rem;
-  background-color: green;
-  font-size: 1.2rem;
-  color: aliceblue;
+  font-size: 1.3rem;
+  color: rgb(58, 163, 255);
+  background-color: transparent;
   cursor: pointer;
 }
 

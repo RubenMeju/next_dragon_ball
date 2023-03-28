@@ -31,13 +31,19 @@ export function CardModal() {
                 description={datos.description}
               />
             </div>
-            <button
+            <motion.button
               type="button"
               className={StylesCardModal.button}
+              whileHover={{
+                scale: 1.1,
+                backgroundColor: 'rgb(58, 163, 255)',
+                color: 'aliceblue'
+              }}
+              whileTap={{ scale: 0.9 }}
               onClick={() => setSelectedId(null)}
             >
               Cerrar
-            </button>
+            </motion.button>
           </motion.div>
         </motion.div>
       )}
