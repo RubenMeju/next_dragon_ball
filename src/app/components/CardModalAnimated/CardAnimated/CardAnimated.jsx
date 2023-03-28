@@ -12,6 +12,7 @@ export default function CardAnimated({ data }) {
       <div className={StylesCardAnimated.containerCards}>
         {data.results.map((item) => (
           <motion.div
+            className={StylesCardAnimated.cursorPointer}
             key={item.id}
             layoutId={item.id}
             initial={{}}
