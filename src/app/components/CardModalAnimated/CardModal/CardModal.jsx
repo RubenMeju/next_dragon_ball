@@ -35,9 +35,7 @@ export function CardModal() {
               type="button"
               className={StylesCardModal.button}
               whileHover={{
-                scale: 1.1,
-                backgroundColor: 'rgb(58, 163, 255)',
-                color: 'aliceblue'
+                scale: 1.1
               }}
               whileTap={{ scale: 0.9 }}
               onClick={() => setSelectedId(null)}
