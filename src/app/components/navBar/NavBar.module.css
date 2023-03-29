@@ -10,7 +10,8 @@
   z-index: 10;
 }
 .navFixed {
-  background-color: var(--blue);
+  background-color: var(--blue-dark);
+  transition: 0.3s all;
 }
 .cont_image {
   position: relative;
