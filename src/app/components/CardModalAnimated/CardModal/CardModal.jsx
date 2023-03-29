@@ -3,8 +3,6 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useContext } from 'react'
 import { ModalContext } from '../CardModalAnimated'
 import StylesCardModal from './CardModal.module.css'
-import svgPlanet from '../../../../../public/planet.svg'
-import svgSkeleton from '../../../../../public/skeleton.svg'
 
 export function CardModal() {
   const { selectedId, setSelectedId, datos } = useContext(ModalContext)
@@ -55,18 +53,13 @@ export function CardModal() {
 
               <div className={StylesCardModal.cardDetails}>
                 <div className={StylesCardModal.groupDetails}>
-                  <Image src={svgPlanet} alt="planet" width={48} height={48} />
+                  <p className={StylesCardModal.label}>Planeta:</p>
                   <p className={StylesCardModal.info}>
                     {datos.planet && datos.planet.name}
                   </p>
                 </div>
                 <div className={StylesCardModal.groupDetails}>
-                  <Image
-                    src={svgSkeleton}
-                    alt="skeleton"
-                    width={48}
-                    height={48}
-                  />
+                  <p className={StylesCardModal.label}>Especie:</p>
                   <p className={StylesCardModal.info}>{datos.species}</p>
                 </div>
               </div>
