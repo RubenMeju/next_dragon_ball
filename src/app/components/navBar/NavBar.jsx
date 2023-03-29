@@ -1,27 +1,13 @@
 'use client'
+import { useHandleScrollY } from '@/app/hooks/useHandleScrollY'
 import Image from 'next/image'
-import { useCallback, useEffect, useState } from 'react'
 import Logo from '../../../../public/letras_dragonball.png'
 import MenuItems from './menuItems/MenuItems'
 
 import StylesNavBar from './NavBar.module.css'
 
 export default function NavBar() {
-  const [scrollY, setScrollY] = useState()
-  const onScroll = useCallback((event) => {
-    const { pageYOffset, scrollY } = window
-    console.log('yOffset', pageYOffset, 'scrollY', scrollY)
-    setScrollY(window.pageYOffset)
-  }, [])
-
-  useEffect(() => {
-    // add eventlistener to window
-    window.addEventListener('scroll', onScroll, { passive: true })
-    // remove event on unmount to prevent a memory leak with the cleanup
-    return () => {
-      window.removeEventListener('scroll', onScroll, { passive: true })
-    }
-  }, [])
+  const scrollY = useHandleScrollY()
   return (
     <nav
       className={`
