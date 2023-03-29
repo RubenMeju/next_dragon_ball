@@ -13,8 +13,11 @@
 
 .contModal {
   width: 100%;
+  height: 100%;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   background-color: var(--blue);
   padding: 2rem;
   border-radius: 0.5rem;
@@ -27,7 +30,7 @@
 .cardImage {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 40vh;
   overflow: hidden;
   border-radius: 0.5rem;
 }
@@ -36,19 +39,22 @@
 }
 
 .cardName {
+  margin: 2rem 0 1rem 0;
   text-align: center;
   font-size: 2rem;
   font-weight: 600;
   color: white;
 }
-.cardInfo {
+.cardBody {
   font-size: 1.2rem;
   color: var(--white);
 }
+
 .info {
   color: var(--white);
 }
 .cardDetails {
+  margin-top: 2rem;
   display: flex;
   justify-content: space-between;
 }
@@ -59,14 +65,12 @@
 }
 
 .button {
-  width: 30%;
-  margin: auto;
-  margin-top: 2rem;
+  margin-top: 3rem;
   padding: 10px;
-  border: 1px solid var(--blue-dark);
+  border: 1px solid var(--white);
   border-radius: 0.5rem;
   font-size: 1.3rem;
-  color: var(--blue-dark);
+  color: var(--white);
   background-color: transparent;
   cursor: pointer;
 }
@@ -79,24 +83,25 @@
 @media screen and (min-width: 500px) {
   .contModal {
     width: 80%;
-    max-width: 800px;
+    height: auto;
   }
 }
 
 @media screen and (min-width: 724px) {
   .contModal {
-    width: 80%;
-    max-width: 1000px;
+    justify-content: center;
     align-items: center;
   }
   .contCard {
     max-width: 90%;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
   }
   .cardImage {
-    width: 50%;
-    height: 500px;
+    min-width: 50%;
+  }
+  .cardBody {
+    padding: 2rem;
   }
   .cardInfo {
     width: 50%;
@@ -104,5 +109,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .button {
+    padding: 1rem 2rem;
   }
 }

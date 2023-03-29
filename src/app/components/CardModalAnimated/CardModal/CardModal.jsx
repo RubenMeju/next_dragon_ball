@@ -36,36 +36,37 @@ export function CardModal() {
                   alt="Logo Dragon Ball"
                 />
               </div>
-              <div className={StylesCardModal.cardInfo}>
+
+              <div className={StylesCardModal.cardBody}>
                 <p className={StylesCardModal.cardName}>{datos.name}</p>
 
-                <div>
-                  <p className={StylesCardModal.info}>{datos.description}</p>
-                  <div className={StylesCardModal.cardDetails}>
-                    <div className={StylesCardModal.groupDetails}>
-                      <Image
-                        src={svgPlanet}
-                        alt="planet"
-                        width={48}
-                        height={48}
-                      />
-                      <p className={StylesCardModal.info}>
-                        {datos.planet && datos.planet.name}
-                      </p>
-                    </div>
-                    <div className={StylesCardModal.groupDetails}>
-                      <Image
-                        src={svgSkeleton}
-                        alt="skeleton"
-                        width={48}
-                        height={48}
-                      />
-                      <p className={StylesCardModal.info}>{datos.species}</p>
-                    </div>
+                <p className={StylesCardModal.info}>{datos.description}</p>
+
+                <div className={StylesCardModal.cardDetails}>
+                  <div className={StylesCardModal.groupDetails}>
+                    <Image
+                      src={svgPlanet}
+                      alt="planet"
+                      width={48}
+                      height={48}
+                    />
+                    <p className={StylesCardModal.info}>
+                      {datos.planet && datos.planet.name}
+                    </p>
+                  </div>
+                  <div className={StylesCardModal.groupDetails}>
+                    <Image
+                      src={svgSkeleton}
+                      alt="skeleton"
+                      width={48}
+                      height={48}
+                    />
+                    <p className={StylesCardModal.info}>{datos.species}</p>
                   </div>
                 </div>
               </div>
             </div>
+
             <motion.button
               type="button"
               className={StylesCardModal.button}
