@@ -11,9 +11,10 @@
 .card {
   width: 100%;
   min-width: 335px;
+  max-width: 335px;
   border-radius: 1rem;
   overflow: hidden;
-  background-color: rgb(22, 100, 245);
+  background-color: var(--blue);
 }
 
 .contImage {
@@ -28,19 +29,25 @@
 
 .cardBody {
   width: 90%;
+  height: 6rem;
+
+  max-width: 100%;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .name {
   font-size: 1.5rem;
   font-weight: 600;
-  color: aliceblue;
+  color: var(--white);
   text-align: center;
 }
 
 .info {
   font-size: 1.2rem;
-  color: rgb(218, 218, 218);
+  color: var(--white);
 }
 
 @media screen and (min-width: 724px) {

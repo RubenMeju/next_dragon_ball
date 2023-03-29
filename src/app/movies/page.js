@@ -5,7 +5,7 @@ export default async function page() {
   const movies = await getMovies()
   return (
     <div>
-      <h1>Películas Dragon Ball</h1>
+      <h1 className="title">Películas Dragon Ball</h1>
 
       <CardModalAnimated data={movies} />
     </div>

@@ -15,7 +15,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: rgb(10, 95, 223);
+  background-color: var(--blue);
   padding: 2rem;
   border-radius: 0.5rem;
 }
@@ -43,10 +43,10 @@
 }
 .cardInfo {
   font-size: 1.2rem;
-  color: rgb(218, 218, 218);
+  color: var(--white);
 }
 .info {
-  color: rgb(218, 218, 218);
+  color: var(--white);
 }
 .cardDetails {
   display: flex;
@@ -63,16 +63,17 @@
   margin: auto;
   margin-top: 2rem;
   padding: 10px;
-  border: 1px solid rgb(58, 163, 255);
+  border: 1px solid var(--blue-dark);
   border-radius: 0.5rem;
   font-size: 1.3rem;
-  color: rgb(58, 163, 255);
+  color: var(--blue-dark);
   background-color: transparent;
   cursor: pointer;
 }
 .button:hover {
-  background-color: rgb(58, 163, 255);
-  color: white;
+  background-color: var(--blue-light);
+  border: 1px solid var(--blue-light);
+  color: var(--white);
 }
 
 @media screen and (min-width: 500px) {
