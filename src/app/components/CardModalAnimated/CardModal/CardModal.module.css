@@ -21,7 +21,7 @@
   position: relative;
   right: 1rem;
   width: 100%;
-  height: 10%;
+  height: 15%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,9 +35,11 @@
 }
 .btnExit {
   position: absolute;
+  top: 1rem;
   right: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 .btnExit:after {
   content: '\274c';
@@ -58,7 +60,7 @@
 }
 .modalBody {
   width: 90%;
-  height: 50%;
+  height: 45%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -76,13 +78,8 @@
   margin-bottom: 1rem;
 }
 
-/*ver esto */
-
 .cardDetails,
 .groupDetails {
   display: flex;
   justify-content: space-between;
-}
-
-@media screen and (min-width: 724px) {
 }
