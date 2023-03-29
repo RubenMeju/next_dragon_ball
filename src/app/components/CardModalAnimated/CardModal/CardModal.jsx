@@ -50,7 +50,7 @@ export function CardModal() {
                         height={48}
                       />
                       <p className={StylesCardModal.info}>
-                        {datos.planet.name}
+                        {datos.planet && datos.planet.name}
                       </p>
                     </div>
                     <div className={StylesCardModal.groupDetails}>
