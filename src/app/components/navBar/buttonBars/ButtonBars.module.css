@@ -10,7 +10,7 @@
   z-index: 20;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .motionButton {
     display: none;
   }
