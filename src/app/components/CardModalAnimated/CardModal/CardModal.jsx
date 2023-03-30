@@ -23,18 +23,15 @@ export function CardModal() {
             exit={{ opacity: 0 }}
             className={StylesCardModal.contModal}
           >
-            <div className={StylesCardModal.modalHeader}>
-              <p className={StylesCardModal.modalName}>{datos.name}</p>
-              <motion.button
-                type="button"
-                className={StylesCardModal.btnExit}
-                whileHover={{
-                  scale: 1.1
-                }}
-                whileTap={{ scale: 0.9 }}
-                onClick={() => setSelectedId(null)}
-              ></motion.button>
-            </div>
+            <motion.button
+              type="button"
+              className={StylesCardModal.btnExit}
+              whileHover={{
+                scale: 1.1
+              }}
+              whileTap={{ scale: 0.9 }}
+              onClick={() => setSelectedId(null)}
+            ></motion.button>
 
             <div className={StylesCardModal.cardImage}>
               <Image
@@ -48,21 +45,24 @@ export function CardModal() {
             </div>
 
             <div className={StylesCardModal.modalBody}>
+              <p className={StylesCardModal.modalName}>{datos.name}</p>
               <p className={StylesCardModal.label}>Descripción</p>
               <p className={StylesCardModal.info}>{datos.description}</p>
 
-              <div className={StylesCardModal.cardDetails}>
-                <div className={StylesCardModal.groupDetails}>
-                  <p className={StylesCardModal.label}>Planeta:</p>
-                  <p className={StylesCardModal.info}>
-                    {datos.planet && datos.planet.name}
-                  </p>
+              {datos.planet && (
+                <div className={StylesCardModal.cardDetails}>
+                  <div className={StylesCardModal.groupDetails}>
+                    <p className={StylesCardModal.label}>Planeta:</p>
+                    <p className={StylesCardModal.info}>
+                      {datos.planet && datos.planet.name}
+                    </p>
+                  </div>
+                  <div className={StylesCardModal.groupDetails}>
+                    <p className={StylesCardModal.label}>Especie:</p>
+                    <p className={StylesCardModal.info}>{datos.species}</p>
+                  </div>
                 </div>
-                <div className={StylesCardModal.groupDetails}>
-                  <p className={StylesCardModal.label}>Especie:</p>
-                  <p className={StylesCardModal.info}>{datos.species}</p>
-                </div>
-              </div>
+              )}
             </div>
           </motion.div>
         </motion.div>

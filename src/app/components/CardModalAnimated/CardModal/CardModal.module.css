@@ -12,46 +12,40 @@
 }
 .contModal {
   width: 85%;
-  height: 80%;
+  height: 90%;
   max-width: 500px;
   background-color: var(--blue);
   border-radius: 0.75rem;
 }
-.modalHeader {
-  position: relative;
-  right: 1rem;
-  width: 100%;
-  height: 15%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 .modalName {
   width: 100%;
-  font-size: 2rem;
+  margin: 0.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
   color: var(--white);
   text-align: center;
 }
 .btnExit {
-  position: absolute;
-  top: 1rem;
-  right: 0;
+  float: right;
+  margin: 1rem;
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
 .btnExit:after {
   content: '\274c';
-  font-size: 28px;
+  font-size: 24px;
   color: #fff;
   text-align: center;
 }
 .cardImage {
   position: relative;
+
   width: 90%;
-  height: 40%;
+  height: 250px;
   margin: auto;
+  margin-top: 2rem;
   border-radius: 0.75rem;
   overflow: hidden;
 }
@@ -60,7 +54,6 @@
 }
 .modalBody {
   width: 90%;
-  height: 45%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -73,7 +66,7 @@
   font-weight: 500;
 }
 .info {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--white);
   margin-bottom: 1rem;
 }
@@ -82,4 +75,10 @@
 .groupDetails {
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 724px) {
+  .contModal {
+    height: 80%;
+  }
 }
