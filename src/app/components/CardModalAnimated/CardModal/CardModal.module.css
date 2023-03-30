@@ -12,7 +12,7 @@
 }
 .contModal {
   width: 85%;
-  height: 90%;
+  height: auto;
   max-width: 500px;
   background-color: var(--blue);
   border-radius: 0.75rem;
@@ -75,10 +75,4 @@
 .groupDetails {
   display: flex;
   justify-content: space-between;
-}
-
-@media screen and (min-width: 724px) {
-  .contModal {
-    height: 80%;
-  }
 }
