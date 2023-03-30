@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 
 export const useHandleScrollY = () => {
-  const [scrollY, setScrollY] = useState(0)
+  const [scrollY, setScrollY] = useState(window.scrollY)
   const handleScroll = () => {
     setScrollY(window.scrollY)
   }

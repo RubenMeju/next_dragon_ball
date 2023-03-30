@@ -23,7 +23,7 @@ export default function NavBar() {
           alt="Logo Dragon Ball"
         />
       </div>
-      <MenuItems />
+      <MenuItems scrollY={scrollY} />
     </nav>
   )
 }

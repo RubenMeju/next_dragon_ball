@@ -1,27 +1,26 @@
 .ul {
   display: flex;
-}
-
-.li {
+  flex-direction: column;
   list-style: none;
-  margin: 1rem;
-  font-size: 1.5rem;
-  color: var(--blue);
+  gap: 1.5rem;
 }
-
-.link:hover {
-  border-bottom: 2px solid var(--orange);
+.lista {
+  font-size: 1.5rem;
+  color: var(--white);
 }
 
 .selected {
   border-bottom: 4px solid var(--orange);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
   .ul {
-    flex-direction: column;
+    flex-direction: row;
   }
-  .li {
+  .lista {
+    color: var(--blue);
+  }
+  .liFixed {
     color: var(--white);
   }
 }

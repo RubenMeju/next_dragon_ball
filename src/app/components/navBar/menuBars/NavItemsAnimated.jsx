@@ -6,7 +6,6 @@ import { NavItems } from '../navItems/NavItems'
 
 export const NavItemsAnimated = () => {
   const { isOpen } = useContext(NavBarContext)
-
   return (
     <motion.div
       initial="closed"
