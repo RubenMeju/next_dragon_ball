@@ -15,7 +15,7 @@ const Path = (props) => (
 
 export const ButtonBars = () => {
   const { isOpen, setIsOpen } = useContext(NavBarContext)
-  const colorIconBars = '#F20505'
+  const colorIconBars = 'var(--yellow)'
   return (
     <motion.button
       initial={false}
