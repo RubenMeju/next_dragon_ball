@@ -23,21 +23,16 @@ export const ButtonBars = () => {
       className={StylesButtonBars.motionButton}
       onClick={() => setIsOpen(!isOpen)}
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-      >
+      <svg viewBox="0 0 24 24">
         <Path
           variants={{
-            closed: { d: 'M 2 2.5 L 20 2.5' },
+            closed: { d: 'M 2 2.5 L 20 2.5', stroke: '#96c8ed' },
             open: { d: 'M 3 16.5 L 17 2.5' }
           }}
         />
         <Path
           d="M 2 9.423 L 20 9.423"
+          stroke="#96c8ed"
           variants={{
             closed: { opacity: 1 },
             open: { opacity: 0 }
@@ -46,7 +41,7 @@ export const ButtonBars = () => {
         />
         <Path
           variants={{
-            closed: { d: 'M 2 16.346 L 20 16.346' },
+            closed: { d: 'M 2 16.346 L 20 16.346', stroke: '#96c8ed' },
             open: { d: 'M 3 2.5 L 17 16.346' }
           }}
         />
