@@ -4,20 +4,23 @@
   list-style: none;
   gap: 1.5rem;
 }
-.lista {
+.li {
   font-size: 1.5rem;
   color: var(--white);
 }
 
+.link:hover {
+  border-bottom: 2px solid var(--orange);
+}
 .selected {
-  border-bottom: 4px solid var(--orange);
+  color: var(--orange);
 }
 
 @media screen and (min-width: 600px) {
   .ul {
     flex-direction: row;
   }
-  .lista {
+  .li {
     color: var(--blue);
   }
   .liFixed {

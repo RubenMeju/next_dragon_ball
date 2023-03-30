@@ -8,13 +8,13 @@ import StylesNavItems from './NavItems.module.css'
 export const NavItems = () => {
   const pathname = usePathname()
   const { setIsOpen, scrollY } = useContext(NavBarContext)
-  console.log('mfefeeju', scrollY.scrollY)
+
   return (
     <ul className={StylesNavItems.ul}>
       {pages.map(({ name, href }) => (
         <li
           key={name}
-          className={` ${StylesNavItems.lista} ${
+          className={` ${StylesNavItems.li} ${
             scrollY.scrollY >= '40' && StylesNavItems.liFixed
           }`}
           onClick={() => setIsOpen(false)}
