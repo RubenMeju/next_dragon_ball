@@ -52,6 +52,8 @@
 
 @media screen and (min-width: 724px) {
   .containerCards {
+    width: 75%;
+    margin: auto;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -61,7 +63,7 @@
 
 @media screen and (min-width: 1700px) {
   .containerCards {
-    width: 70%;
+    width: 65%;
     margin: auto;
   }
 }

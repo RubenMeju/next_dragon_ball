@@ -1,5 +1,3 @@
-'use client'
-import { useHandleScrollY } from '@/app/hooks/useHandleScrollY'
 import Image from 'next/image'
 import Logo from '../../../../public/letras_dragonball.png'
 import MenuItems from './menuItems/MenuItems'
@@ -7,12 +5,8 @@ import MenuItems from './menuItems/MenuItems'
 import StylesNavBar from './NavBar.module.css'
 
 export default function NavBar() {
-  const scrollY = useHandleScrollY()
   return (
-    <nav
-      className={`
-        ${StylesNavBar.navBar} ${scrollY >= '40' && StylesNavBar.navFixed}`}
-    >
+    <nav className={StylesNavBar.navBar}>
       <div className={StylesNavBar.cont_image}>
         <Image
           fill={true}
@@ -23,7 +17,7 @@ export default function NavBar() {
           alt="Logo Dragon Ball"
         />
       </div>
-      <MenuItems scrollY={scrollY} />
+      <MenuItems />
     </nav>
   )
 }

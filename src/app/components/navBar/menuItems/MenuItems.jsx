@@ -8,10 +8,10 @@ import StylesMenuItems from './MenuItems.module.css'
 
 export const NavBarContext = createContext()
 
-export default function MenuItems(scrollY) {
+export default function MenuItems() {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <NavBarContext.Provider value={{ isOpen, setIsOpen, scrollY }}>
+    <NavBarContext.Provider value={{ isOpen, setIsOpen }}>
       <div className={StylesMenuItems.navItems}>
         <NavItems />
       </div>

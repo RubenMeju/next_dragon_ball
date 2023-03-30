@@ -20,10 +20,4 @@
   .ul {
     flex-direction: row;
   }
-  .li {
-    color: var(--blue);
-  }
-  .liFixed {
-    color: var(--white);
-  }
 }
