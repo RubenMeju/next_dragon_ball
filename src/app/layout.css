@@ -6,10 +6,13 @@
 
 body {
   width: 100%;
-  background-color: var(--blue);
+  background: linear-gradient(
+    340deg,
+    rgba(255, 255, 0, 1) 0%,
+    rgba(255, 59, 0, 1) 100%
+  );
 }
 .container {
-  position: relative;
   width: 90%;
   margin: auto;
 }
