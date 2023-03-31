@@ -15,6 +15,7 @@ body {
 .container {
   width: 90%;
   margin: auto;
+  padding-top: 8rem;
 }
 a {
   color: inherit;

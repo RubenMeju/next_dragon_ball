@@ -11,7 +11,7 @@
 }
 
 .link:hover {
-  border-bottom: 2px solid var(--orange);
+  border-bottom: 2px solid var(--red);
 }
 .selected {
   color: var(--yellow);
