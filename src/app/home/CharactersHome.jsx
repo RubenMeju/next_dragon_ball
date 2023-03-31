@@ -13,7 +13,7 @@ export default async function CharactersHome() {
           <div key={character.id} className={StylesCharactersHome.character}>
             <Image
               className={StylesCharactersHome.image}
-              fill={true}
+              fill
               src={character.image}
               alt={character.name}
             />
