@@ -1,7 +1,7 @@
 export const pages = [
   { name: 'Inicio', href: '/', is_active: true },
   { name: 'Personajes', href: '/characters' },
-  { name: 'Peliculas', href: '/movies' },
+  { name: 'Películas', href: '/movies' },
   { name: 'Serie', href: '/serie' }
 ]
 

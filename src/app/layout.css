@@ -6,16 +6,12 @@
 
 body {
   width: 100%;
-  background: linear-gradient(
-    340deg,
-    rgb(255, 127, 42) 0%,
-    rgb(255, 115, 0) 100%
-  );
+  background: linear-gradient(to right, #fe8c00, #f83600);
 }
 .container {
   width: 90%;
   margin: auto;
-  padding-top: 8rem;
+  padding-top: 9rem;
 }
 a {
   color: inherit;
