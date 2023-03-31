@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import imagen from '../../public/capa.png'
+import CharactersHome from './home/CharactersHome'
 export default async function Home() {
   return (
     <main className={styles.main}>
@@ -31,9 +32,7 @@ export default async function Home() {
         </p>
       </article>
 
-      <div>
-        <h2 className="title">Personajes</h2>
-      </div>
+      <CharactersHome />
     </main>
   )
 }

@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin: 4rem 0 2rem 0;
+  font-size: 2rem;
+  color: var(--yellow);
+}
+.card {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: red;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.character {
+  position: relative;
+  width: 50%;
+  height: 200px;
+  overflow: hidden;
+}
+.image {
+  object-fit: cover;
+}
+
+.button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: var(--blue);
+  font-size: 1.2rem;
+  color: var(--white);
+  border: none;
+  border-radius: 1rem;
+}
