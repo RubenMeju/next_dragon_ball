@@ -1,6 +1,6 @@
 'use client'
 
-import { useReadScrollY } from '@/app/hooks/useReadScrollY'
+// import { useReadScrollY } from '@/app/hooks/useReadScrollY'
 import Image from 'next/image'
 import Logo from '../../../../public/letras_dragonball.png'
 import MenuItems from './menuItems/MenuItems'
@@ -9,14 +9,14 @@ import StylesNavBar from './NavBar.module.css'
 
 export default function NavBar() {
   // read scrollY
-  const scrollY = useReadScrollY()
-  console.log('scrollY', scrollY)
+  // const scrollY = useReadScrollY()
+  // console.log('scrollY', scrollY)
   return (
-    <nav
-      className={` ${StylesNavBar.navBar} ${
+    <nav className={StylesNavBar.navBar}>
+      {/* className={` ${StylesNavBar.navBar} ${
         scrollY >= '40' && StylesNavBar.fixed
-      }`}
-    >
+      }`}  */}
+
       <div className={StylesNavBar.container}>
         <div className={StylesNavBar.cont_image}>
           <Image

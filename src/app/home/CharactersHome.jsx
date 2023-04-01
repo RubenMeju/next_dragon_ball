@@ -14,6 +14,7 @@ export default async function CharactersHome() {
             <Image
               className={StylesCharactersHome.image}
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               src={character.image}
               alt={character.name}
             />

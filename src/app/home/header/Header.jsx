@@ -9,6 +9,7 @@ export default function Header() {
           src={imagen}
           alt="Imagen de Goku"
           fill={true}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
           className={StylesHeader.img}
         />
       </div>
