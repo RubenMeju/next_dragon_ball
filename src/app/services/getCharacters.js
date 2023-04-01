@@ -1,5 +1,8 @@
+export const URLbase = 'https://meju.eu.pythonanywhere.com/api/character/'
+// 'http://127.0.0.1:8000/api/character/'
+
 export const getCharacters = () => {
-  return fetch('http://127.0.0.1:8000/api/character/')
+  return fetch(URLbase)
     .then((res) => res.json())
     .catch((err) => {
       throw new Error('Algo ha salido mal', err)

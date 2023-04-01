@@ -4,7 +4,8 @@ const nextConfig = {
     appDir: true
   },
   images: {
-    domains: ['127.0.0.1']
+    // domains: ['127.0.0.1']
+    domains: ['http://meju.eu.pythonanywhere.com/']
   }
 }
 
