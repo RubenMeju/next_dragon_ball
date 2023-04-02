@@ -1,10 +1,24 @@
 'use client'
 import Image from 'next/image'
-
 import { motion } from 'framer-motion'
 import { useContext } from 'react'
 import { ModalContext } from '../CardModalAnimated'
 import StylesCardAnimated from './CardAnimated.module.css'
+
+const cardVariants = {
+  offscreen: {
+    y: 300
+  },
+  onscreen: {
+    y: 50,
+    rotate: 0,
+    transition: {
+      type: 'spring',
+      bounce: 0.4,
+      duration: 0.8
+    }
+  }
+}
 
 export default function CardAnimated({ data }) {
   const { setSelectedId, setDatos } = useContext(ModalContext)
@@ -16,15 +30,20 @@ export default function CardAnimated({ data }) {
             className={StylesCardAnimated.cursorPointer}
             key={item.id}
             layoutId={item.id}
-            initial={{}}
+            initial="offscreen"
             animate={{}}
             exit={{ opacity: 0 }}
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.8 }}
             onClick={() => {
               setSelectedId(item.id)
               setDatos(item)
             }}
           >
-            <div className={StylesCardAnimated.card}>
+            <motion.div
+              className={StylesCardAnimated.card}
+              variants={cardVariants}
+            >
               <div className={StylesCardAnimated.contImage}>
                 <Image
                   fill={true}
@@ -43,7 +62,7 @@ export default function CardAnimated({ data }) {
                 <p className={StylesCardAnimated.name}>{item.name}</p>
                 <p className={StylesCardAnimated.info}>{item.escription}</p>
               </div>
-            </div>
+            </motion.div>
           </motion.div>
         ))}
       </div>
