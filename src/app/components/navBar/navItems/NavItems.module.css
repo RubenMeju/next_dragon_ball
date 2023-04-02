@@ -17,7 +17,7 @@
   color: var(--yellow);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .ul {
     flex-direction: row;
   }

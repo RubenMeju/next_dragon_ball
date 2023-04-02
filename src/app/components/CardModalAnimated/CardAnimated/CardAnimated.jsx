@@ -35,6 +35,11 @@ export default function CardAnimated({ data }) {
             exit={{ opacity: 0 }}
             whileInView="onscreen"
             viewport={{ once: true, amount: 0.8 }}
+            whileHover={{
+              scale: 1.1,
+              boxShadow: '0px 0px 8px rgba(0,0,0,1)',
+              transition: { duration: 0.2 }
+            }}
             onClick={() => {
               setSelectedId(item.id)
               setDatos(item)

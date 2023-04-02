@@ -78,7 +78,7 @@
   justify-content: space-between;
 }
 
-@media screen and (min-width: 724px) {
+@media screen and (min-width: 784px) {
   .cardImage {
     height: 400px;
   }
