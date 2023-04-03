@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { useContext } from 'react'
 import { ModalContext } from '../CardModalAnimated'
 import StylesCardAnimated from './CardAnimated.module.css'
+import imagen from '../../../../../public/capa.png'
 
 const cardVariants = {
   offscreen: {
@@ -27,7 +28,6 @@ export default function CardAnimated({ data }) {
       <div className={StylesCardAnimated.containerCards}>
         {data.results.map((item) => (
           <motion.div
-            className={StylesCardAnimated.cursorPointer}
             key={item.id}
             layoutId={item.id}
             initial="offscreen"
@@ -35,19 +35,19 @@ export default function CardAnimated({ data }) {
             exit={{ opacity: 0 }}
             whileInView="onscreen"
             viewport={{ once: true, amount: 0.8 }}
-            whileHover={{
-              scale: 1.1,
-              boxShadow: '0px 0px 8px rgba(0,0,0,1)',
-              transition: { duration: 0.2 }
-            }}
-            onClick={() => {
-              setSelectedId(item.id)
-              setDatos(item)
-            }}
           >
             <motion.div
               className={StylesCardAnimated.card}
               variants={cardVariants}
+              whileHover={{
+                scale: 1.1,
+                boxShadow: '-1px 5px 14px -1px rgba(0,0,0,0.75)',
+                transition: { duration: 0.4 }
+              }}
+              onClick={() => {
+                setSelectedId(item.id)
+                setDatos(item)
+              }}
             >
               <div className={StylesCardAnimated.contImage}>
                 <Image
@@ -56,8 +56,6 @@ export default function CardAnimated({ data }) {
                   className={StylesCardAnimated.image}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                   // priority={true}
-                  // placeholder="blur"
-                  // blurDataURL="https://static.vecteezy.com/system/resources/previews/005/704/067/non_2x/rocket-ship-launch-flat-vector.jpg"
                   loading="lazy"
                   alt="Logo Dragon Ball"
                 />
