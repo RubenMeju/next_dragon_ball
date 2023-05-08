@@ -1,4 +1,6 @@
 .container {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,30 +12,22 @@
   font-size: 2rem;
   color: var(--yellow);
 }
-.card {
+
+.containerCards {
   width: 100%;
-  height: auto;
-  margin: auto;
   display: flex;
   flex-wrap: wrap;
-  background-color: red;
-  border-radius: 1rem;
-  overflow: hidden;
+  background-color: green;
 }
-
-.character {
+.contImage {
   position: relative;
-  width: 50%;
-  height: 33.33%;
-  max-height: 200px;
-  min-height: 300px;
-  overflow: hidden;
+  width: 33.33%;
+  height: 200px;
+  background-color: yellow;
 }
 .image {
-  width: 100%;
-  height: 100%;
-  object-position: top;
   object-fit: cover;
+  object-position: center;
 }
 
 .button {
@@ -47,12 +41,9 @@
 }
 
 @media screen and (min-width: 724px) {
-  .character {
-    width: 33.33%;
+  .containerCards {
+    height: 400px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .character {
-    width: 16.65%;
-  }
 }
