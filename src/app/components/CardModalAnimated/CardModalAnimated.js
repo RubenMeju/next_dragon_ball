@@ -5,7 +5,7 @@ import { CardModal } from './CardModal/CardModal'
 
 export const ModalContext = createContext()
 
-export default function CardModalAnimated({ data }) {
+export default async function CardModalAnimated({ data }) {
   const [selectedId, setSelectedId] = useState(null)
   const [datos, setDatos] = useState([])
   return (
@@ -13,7 +13,7 @@ export default function CardModalAnimated({ data }) {
       <ModalContext.Provider
         value={{ selectedId, setSelectedId, datos, setDatos }}
       >
-        <CardAnimated data={data} />
+        <CardAnimated />
         <CardModal />
       </ModalContext.Provider>
     </>
